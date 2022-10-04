@@ -1,39 +1,82 @@
-body{
-    background-color: aqua;
-    
+*{
+    margin: 0;
+    padding: 0;
 }
 img{
-    width: 100%;
-    height: 100%;
+    width: 10%;
+    height: auto;
 }
-.navbar{
-    display: flex;
-    justify-content: right;
-    height: 50px;
-    align-items: center;
-    position: sticky;
-    top: 0;
+.wrapper{
+    width: 1170px;
+    margin: auto;
 }
-.navbar::before{
-    content: "";
-    position: absolute;
-    background: color #d47ae8;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+h1{
+    color: white;
 }
-.navbar ul{
-    display: flex;
+header{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(big-one.jpg);
+    height: 100vh;
+    -webkit-background-composite: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.nav-area{
+    float: right;
     list-style: none;
+    margin-top: 30px;
 }
-.navbar ul li{
-    font-size: 1.1rem;
+.nav-area li{
+    display: inline-block;
 }
-.navbar ul li a{
-    padding: 5px 20px;
+.nav-area li a{
+    color: #fff;
     text-decoration: none;
-    color: black;
+    padding: 5px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 16px;
 }
-.navbar ul li a:hover{
-    border-bottom: 2px solid #ff87ca;
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+.logo img{
+    max-width: 10%;
+    float: left;
+    height: auto;
+}
+.welcome-text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+.welcome-text h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.welcome-text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+.welcome-text a:hover{
+    background: #fff;
+    color: #333;
+}
+
+img{
+    width: 10%;
+    height: auto;
+    max-width: 10%;
+    float: left;
+    height: auto;
 }
