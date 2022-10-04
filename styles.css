@@ -1,11 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
+body{
+    background-color: aqua;
+    
 }
-html{
-    scroll-snap-align: smooth;
+img{
+    width: 100%;
+    height: 100%;
 }
-
 .navbar{
     display: flex;
     justify-content: right;
